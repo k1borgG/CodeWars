@@ -30,3 +30,24 @@
 #         return True
 #     else:
 #         return False
+
+# # 3) Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+# def persistence(n):
+#     nStr = str(n)
+#     a = []
+#     countStep = 0
+#     for a1 in nStr:
+#         a+=a1
+#     while len(a)>1:
+#         countStep+=1
+#         mult = 1
+#         x = a
+#         while len(x) > 1:
+#             for c in x:
+#                 mult *= int(c)
+#             a = []
+#             multStr = str(mult)
+#             for k in multStr:
+#                 a+=k
+#             x = []
+#     return countStep
