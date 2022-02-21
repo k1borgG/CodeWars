@@ -51,3 +51,14 @@
 #                 a+=k
 #             x = []
 #     return countStep
+
+# # 4) Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+# def binary_array_to_number(arr):
+#     x = 0
+#     k = 0
+#     for i in range(-1, -(len(arr))-1, -1):
+#         x += arr[i] * (2 ** k)
+#         k += 1
+#     return x
+
+# 5)
