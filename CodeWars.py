@@ -91,3 +91,22 @@
 #         minute = "00"
 #     return hours+":"+minute+":"+sec
 
+# # 6) You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer
+# def find_outlier(integers):
+#     countEven = 0
+#     evenArr = []
+#     countOdd = 0
+#     oddArr = []
+#     for x in integers:
+#         if x % 2 == 0:
+#             countEven += 1
+#             evenArr.append(x)
+#         else:
+#             countOdd += 1
+#             oddArr.append(x)
+#     if countEven < countOdd:
+#         return evenArr[0]
+#     else:
+#         return oddArr[0]
+
+# 7)
