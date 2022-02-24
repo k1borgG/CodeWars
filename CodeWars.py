@@ -61,4 +61,33 @@
 #         k += 1
 #     return x
 
-# 5)
+# # 5) Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
+# def make_readable(seconds):
+#     sec = seconds % 60
+#     if (seconds // 3600) <= 99:
+#         hours = seconds//3600
+#         seconds = seconds%3600
+#         if 1 <= hours <= 9:
+#             hours = "0"+str(hours)
+#         elif hours == 0:
+#             hours = "00"
+#         else:
+#             hours = str(hours)
+#     if (seconds // 60) <= 59:
+#         minute = seconds // 60
+#         if 1 <= minute <= 9:
+#             minute = "0"+str(minute)
+#         elif minute == 0:
+#             minute = "00"
+#         else:
+#             minute = str(minute)
+#         if 1 <= sec <= 9:
+#             sec = "0"+str(sec)
+#         elif sec==0:
+#             sec = "00"
+#         else:
+#             sec = str(sec)
+#     else:
+#         minute = "00"
+#     return hours+":"+minute+":"+sec
+
