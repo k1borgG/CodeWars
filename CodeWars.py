@@ -109,4 +109,47 @@
 #     else:
 #         return oddArr[0]
 
-# 7)
+# # 7) Digital root is the recursive sum of all the digits in a number.
+# def digital_root(n):
+#     nStr = str(n)
+#     a = []
+#     for a1 in nStr:
+#         a+=a1
+#     while len(a)>1:
+#         sum = 0
+#         x = a
+#         while len(x) > 1:
+#             for c in x:
+#                 sum += int(c)
+#             a = []
+#             sumStr = str(sum)
+#             for k in sumStr:
+#                 a+=k
+#             x = []
+#     return int(a[0])
+
+# # 8) Find the missing letter
+# def find_missing_letter(input):
+#     alphabet = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+#     start = alphabet.index(input[0])
+#     for i in range(len(input)):
+#         if not input[i] == alphabet[start+i]:
+#             return alphabet[start+i]
+
+# # 9) Write a method, that gets an array of integer-numbers and return an array of the averages of each integer-number and his follower, if there is one.
+# def averages(arr):
+#     a = []
+#     if arr != None:
+#         if len(arr) <= 1:
+#             return a
+#         else:
+#             for i in range(1,len(arr)):
+#                 if ((arr[i-1]+arr[i])/2)%1==0:
+#                     a.append((arr[i-1]+arr[i])//2)
+#                 else:
+#                     a.append((arr[i - 1] + arr[i]) / 2)
+#             return a
+#     else:
+#         return a
+
+# 10)
