@@ -152,4 +152,30 @@
 #     else:
 #         return a
 
-# 10)
+# # 10) Greed is a dice game played with five six-sided dice. Your mission, should you choose to accept it, is to score a throw according to these rules.
+# def score(dice):
+#     finalScore = 0
+#     arrCount = [0,0,0,0,0,0]
+#     for i in range(0, len(dice)):
+#          arrCount[dice[i]-1] += 1
+#     for indexOfCount in range(0,len(arrCount)):
+#         if indexOfCount == 0:
+#             if arrCount[indexOfCount] == 3:
+#                 finalScore += 1000
+#             else:
+#                 if arrCount[indexOfCount] - 3 > 0:
+#                     finalScore += 1000 + (arrCount[indexOfCount] - 3) * 100
+#                 else:
+#                     finalScore += arrCount[indexOfCount] * 100
+#         elif indexOfCount == 4:
+#             if arrCount[indexOfCount] == 3:
+#                 finalScore += 500
+#             else:
+#                 if arrCount[indexOfCount] - 3 > 0:
+#                     finalScore += 500 + (arrCount[indexOfCount] - 3) * 50
+#                 else:
+#                     finalScore += arrCount[indexOfCount] * 50
+#         else:
+#             if arrCount[indexOfCount] >= 3:
+#                 finalScore += 100 * (indexOfCount+1)
+#     return finalScore
